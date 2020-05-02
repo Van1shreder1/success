@@ -1,0 +1,48 @@
+<?php setcookie("FBpixel", $_GET["fbpixel"], time()+60*60*24); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <iframe src="pix/PageView.php" width="1" height="1" frameborder="0" style="display: none;" frameborder="0" scrolling="no"></iframe>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="https://mldata.pro/51092/prices.js?product_ids=12376&{mleads_url}"></script>
+	<script type="text/javascript" src="subid.js"></script></head>
+	<body>
+		<style>
+		#country{display: block;
+    width: 400px;
+    padding: 8px 10px;
+    border: #888 1px solid;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fff;
+} 
+		</style>
+		<div id="wrapper">
+		<form action="/sendleads.php?" method="post" id="order_form" onsubmit="return cartTelCheck('phone', true, this, event);">
+			<fieldset>
+				<h1>Заполните форму ниже</h1>
+				<div class="row">
+					<p>Ваше ФИО</p>
+					<input type="text" name="client">
+				</div>
+				<div class="row">
+					<p>Ваш телефон</p>
+					<input type="text" name="tel" id="phone" placeholder="Номер телефона в межд. формате" >
+				</div>
+				<div class="row">
+					<input type="submit" value="Заказать">
+				</div>
+			</fieldset>
+			  <center><div><a href="polici.html">Политика конфиденциальности</a></div></center><br> 
+*На данном сайте действует <br> <a href="https://www.facebook.com/about/privacy/update"  target="_blank" style="cursor: pointer;color: initial;">'Политика использования данных Facebook'</a><br> 
+		</form>
+		</div>
+       
+	</body>
+</html>
